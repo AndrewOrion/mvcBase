@@ -25,10 +25,8 @@ public class ConexionBD {
 			System.out.println("Conexión realizada correctamente.");
 			
 		} catch (ClassNotFoundException e) {
-			// TODO Bloque catch generado automáticamente
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Bloque catch generado automáticamente
 			e.printStackTrace();
 		}
 		return conexion;
@@ -41,7 +39,6 @@ public class ConexionBD {
 				System.out.println("Conexión cerrada");
 				conexion=null;
 			} catch (SQLException e) {
-				// TODO Bloque catch generado automáticamente
 				e.printStackTrace();
 			}
 		}

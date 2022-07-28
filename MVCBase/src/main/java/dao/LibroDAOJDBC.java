@@ -92,7 +92,6 @@ public class LibroDAOJDBC implements LibroDAO {
 			}
 		
 		} catch (SQLException e) {
-			// TODO Bloque catch generado automáticamente
 			e.printStackTrace();
 		} finally {
 			try {
@@ -100,7 +99,6 @@ public class LibroDAOJDBC implements LibroDAO {
 				consulta.close();
 				conexion.cerrarConexion();
 			} catch (SQLException e) {
-				// TODO Bloque catch generado automáticamente
 				e.printStackTrace();
 			}
 		}
@@ -138,7 +136,6 @@ public class LibroDAOJDBC implements LibroDAO {
 				consulta.close();
 				conexion.cerrarConexion();
 			} catch (SQLException e) {
-				// TODO Bloque catch generado automáticamente
 				e.printStackTrace();
 			}
 		}
@@ -185,7 +182,6 @@ public class LibroDAOJDBC implements LibroDAO {
 				consulta.close();
 				conexion.cerrarConexion();
 			} catch (SQLException e) {
-				// TODO Bloque catch generado automáticamente
 				e.printStackTrace();
 			}
 		}
@@ -215,7 +211,6 @@ public class LibroDAOJDBC implements LibroDAO {
 				consulta.close();
 				conexion.cerrarConexion();
 			} catch (SQLException e) {
-				// TODO Bloque catch generado automáticamente
 				e.printStackTrace();
 			}
 		}
