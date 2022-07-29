@@ -3,6 +3,12 @@
     
 <jsp:include page="plantillas/cabecera.jsp"></jsp:include>
 
-<a href=""></a>
+<nav>
+	<ul>
+		<li><a href="libros">Libros</a></li>
+		<li><a href="editoriales">Editoriales</a></li>
+		<li><a href="autores">Autores</a></li>	
+	</ul>
+</nav>
 
 <jsp:include page="plantillas/pie.jsp"></jsp:include>

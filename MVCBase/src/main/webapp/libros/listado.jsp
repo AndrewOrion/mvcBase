@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="UTF-8"%>
   
 <%@ page import="modelo.Libro" %>  
 <%@ page import="java.util.List" %> 
 
 <jsp:include page="../plantillas/cabecera.jsp"></jsp:include>
+
+<a href="?opcion=nuevo">Insertar libro</a>
 
 <h2>Listado de libros</h2>
 
@@ -18,13 +20,15 @@
 		<table class="estilo-tabla">
 			<tr>
 				<th>ISBN</th>
-				<th>Título</th>
+				<th>TÃ­tulo</th>
 				<th>Cod. Editorial</th>
-				<th>Año</th>
-				<th>Núm. páginas</th>
+				<th>AÃ±o</th>
+				<th>NÃºm. pÃ¡ginas</th>
 				<th>Precio</th>
 				<th>Cantidad</th>
 				<th>PrecioCd</th>
+				<th>Eliminar</th>
+				<th>Editar</th>
 			</tr>	
 			<%for(Libro l:lista){
 				%>
@@ -32,11 +36,13 @@
 					<td><%= l.getIsbn() %></td>
 					<td><%= l.getTitulo() %></td>
 					<td><%= l.getCodEditorial() %></td>
-					<td><%= l.getAño() %></td>
+					<td><%= l.getAÃ±o() %></td>
 					<td><%= l.getNumPags() %></td>
 					<td><%= l.getPrecio() %></td>
 					<td><%= l.getCantidad() %></td>
-					<td><%= l.getPrecioCD() %></td>				
+					<td><%= l.getPrecioCD() %></td>		
+					<td><a href="?opcion=eliminar&isbn=<%=l.getIsbn()%>">X</a></td>	
+					<td><a href="?opcion=editar&isbn=<%=l.getIsbn()%>">Editar</a></td>	
 				</tr>
 				<%
 			}
